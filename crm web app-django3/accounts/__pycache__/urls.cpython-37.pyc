@@ -1,0 +1,5 @@
+B
+    B‘Ü]k  ã            
+   @   st   d dl mZ ddlmZ edejddedejdded	ejd
+dedejddedejddedej	ddgZ
+dS )é    )Úpathé   )ÚviewsÚ Z	dashboard)Únamez	products/Úproductszcustomer/<str:pk>/Úcustomerzcreate_order/Zcreate_orderzupdate_order/<str:pk>/Zupdate_orderzdelete_order/<str:pk>/Zdelete_orderN)Údjango.urlsr   r   r   Z	dashBoardr   r   ZcreateOrderZupdateOrderZdeleteOrderÚurlpatterns© r   r   ú4C:\Users\denni\OneDrive\Desktop\crm\accounts\urls.pyÚ<module>   s   

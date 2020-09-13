@@ -1,0 +1,16 @@
+B
+    ÕÜ]¯  ã               @   sF   d dl mZ G dd„ dejƒZG dd„ dejƒZG dd„ dejƒZdS )	é    )Úmodelsc               @   sZ   e Zd ZejdddZejdddZejdddZejddddZ	dd„ Z
+edd„ ƒZd	S )
+ÚCustomeréÈ   T)Ú
+max_lengthÚnull)Úauto_now_addr   Úblankc             C   s   | j S )N)Úname)Úself© r   ú6C:\Users\denni\OneDrive\Desktop\crm\accounts\models.pyÚ__str__   s    zCustomer.__str__c             C   s   | j  ¡  ¡ }t|ƒS )N)Z	order_setÚallÚcountÚstr)r
+   Zorder_countr   r   r   Úorders   s    zCustomer.ordersN)Ú__name__Ú
+__module__Ú__qualname__r   Ú	CharFieldr	   ÚphoneÚemailÚDateTimeFieldÚdate_createdr   Úpropertyr   r   r   r   r   r      s   r   c               @   sZ   e Zd ZdZejdddZejddZejddedZ	e 
+¡ ZejddddZdd	„ Zd
+S )ÚProduct))ÚIndoorr   )zOut DoorzOut Doorr   T)r   r   )r   )r   r   Úchoices)r   r   r   c             C   s   | j S )N)r	   )r
+   r   r   r   r   "   s    zProduct.__str__N)r   r   r   ÚCATEGORYr   r   r	   Ú
+FloatFieldZpriceÚcategoryÚ	TextFieldÚdescriptionr   r   r   r   r   r   r   r      s   r   c               @   s\   e Zd ZdZejeejddZeje	ejddZ
+ejddddZejddedZdd„ Zd	S )
+ÚOrder))ÚPendingr$   )zOut for deliveryzOut for delivery)Ú	Deliveredr%   T)Ú	on_deleter   )r   r   r   r   )r   r   r   c             C   s
+   t | jƒS )N)r   Úproduct)r
+   r   r   r   r   3   s    zOrder.__str__N)r   r   r   ZSTATUSr   Ú
+ForeignKeyr   ÚSET_NULLZcustomerr   r'   r   r   r   Ústatusr   r   r   r   r   r#   '   s   r#   N)Ú	django.dbr   ÚModelr   r   r#   r   r   r   r   Ú<module>   s   

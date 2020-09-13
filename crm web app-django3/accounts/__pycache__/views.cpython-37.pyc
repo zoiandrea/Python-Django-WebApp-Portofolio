@@ -1,0 +1,20 @@
+B
+    r›]ı	  „               @   sp   d dl mZmZ d dlmZ ddlT ddlmZ ddlm	Z	 ddÑ Z
+d	d
+Ñ ZddÑ ZddÑ ZddÑ ZddÑ ZdS )È    )⁄render⁄redirect)⁄HttpResponseÈ   )⁄*)⁄	OrderForm)⁄OrderFilterc             C   sz   t j†° †d°ddÖ }tj†° }|†° }t j†° †° }t jjddç†° }t jjddç†° }||||||dú}t| d|ÉS )	Nz-statusr   È   ⁄	Delivered)⁄status⁄Pending)⁄	customers⁄orders⁄total_customers⁄total_orders⁄	delivered⁄pendingzaccounts/dashBoard.html)⁄Order⁄objects⁄all⁄order_by⁄Customer⁄count⁄filterr   )⁄requestr   r   r   r   r   r   ⁄context© r   ˙5C:\Users\denni\OneDrive\Desktop\crm\accounts\views.py⁄	dashBoard	   s    
+
+r   c             C   s   t j†° }d|i}t| d|ÉS )N⁄productszaccounts/products.html)⁄Productr   r   r   )r   r   r   r   r   r   r      s    
+r   c             C   sN   t jj|dç}|j†° }|†° }t| j|dç}|j}||||dú}t	| d|ÉS )N)⁄id)⁄queryset)⁄customerr   r   r   zaccounts/customer.html)
+r   r   ⁄get⁄	order_setr   r   r   ⁄GET⁄qsr   )r   ⁄pkr#   r   r   ZorderFilterr   r   r   r   r#      s    
+r#   c             C   sL   d}t É }| jdkr6t | jÉ}|†° r6|†°  tdÉS ||dú}t| d|ÉS )N⁄create⁄POST˙/)⁄action⁄formzaccounts/order_form.html)r   ⁄methodr*   ⁄is_valid⁄saver   r   )r   r,   r-   r   r   r   r   ⁄createOrder0   s    
+
+
+r1   c             C   sn   d}t jj|dç}t|dç}| jdkrXt| j|dç}|†° rX|†°  tdt	|j
+jÉ ÉS ||dú}t| d|ÉS )N⁄update)r!   )⁄instancer*   z
+/customer/)r,   r-   zaccounts/order_form.html)r   r   r$   r   r.   r*   r/   r0   r   ⁄strr#   r!   r   )r   r(   r,   ⁄orderr-   r   r   r   r   ⁄updateOrder>   s    
+
+
+r6   c             C   sL   t jj|dç}| jdkr<|jj}dt|É }|†°  t|ÉS t	| dd|iÉS )N)r!   r*   z
+/customer/zaccounts/delete_item.html⁄item)
+r   r   r$   r.   r#   r!   r4   ⁄deleter   r   )r   r(   r5   ⁄customer_idZcustomer_urlr   r   r   ⁄deleteOrderN   s    
+r:   N)Zdjango.shortcutsr   r   ⁄django.httpr   ⁄models⁄formsr   ⁄filtersr   r   r   r#   r1   r6   r:   r   r   r   r   ⁄<module>   s   

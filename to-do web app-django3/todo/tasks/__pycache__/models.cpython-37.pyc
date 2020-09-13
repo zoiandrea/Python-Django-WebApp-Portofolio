@@ -1,0 +1,14 @@
+B
+    vCí]  ã               @   s"   d dl mZ G dd„ dejƒZdS )é    )Úmodelsc               @   s8   e Zd ZejddZejddZejddZ	dd„ Z
+d	S )
+ÚTaskéÈ   )Ú
+max_lengthF)ÚdefaultT)Úauto_now_addc             C   s   | j S )N)Útitle)Úself© r
+   ú4C:\Users\denni\OneDrive\Desktop\todo\tasks\models.pyÚ__str__
+   s    zTask.__str__N)Ú__name__Ú
+__module__Ú__qualname__r   Ú	CharFieldr   ÚBooleanFieldZcompleteÚDateTimeFieldÚcreatedr   r
+   r
+   r
+   r   r      s   r   N)Ú	django.dbr   ÚModelr   r
+   r
+   r
+   r   Ú<module>   s   

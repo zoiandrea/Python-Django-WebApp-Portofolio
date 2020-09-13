@@ -1,0 +1,5 @@
+B
+    Mí]ñ   ã               @   sJ   d dl mZ ddlmZ edejddedejdded	ejd
+dgZdS )é    )Úpathé   )ÚviewsÚ Úlist)Únamezupdate_task/<str:pk>/Zupdate_taskzdelete/<str:pk>/ÚdeleteN)Údjango.urlsr   r   r   ÚindexZ
+updateTaskZ
+deleteTaskÚurlpatterns© r   r   ú2C:\Users\denni\OneDrive\Desktop\todo\tasks\urls.pyÚ<module>   s   

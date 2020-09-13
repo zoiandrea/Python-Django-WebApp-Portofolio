@@ -1,0 +1,8 @@
+B
+    !Eì]‚  ã               @   s&   d dl mZmZ G dd„ dejƒZdS )é    )Ú
+migrationsÚmodelsc            	   @   sb   e Zd ZdZg Zejddejdddddfdej	dd	fd
+ej
+ddfdejddfgdgZdS )Ú	MigrationTÚTaskÚidFÚID)Úauto_createdÚprimary_keyÚ	serializeÚverbose_nameÚtitleéÈ   )Ú
+max_lengthÚcomplete)ÚdefaultÚcreated)Úauto_now_add)ÚnameÚfieldsN)Ú__name__Ú
+__module__Ú__qualname__ÚinitialÚdependenciesr   ÚCreateModelr   Ú	AutoFieldÚ	CharFieldÚBooleanFieldÚDateTimeFieldÚ
+operations© r    r    úEC:\Users\denni\OneDrive\Desktop\todo\tasks\migrations\0001_initial.pyr      s   r   N)Ú	django.dbr   r   r   r    r    r    r!   Ú<module>   s   
